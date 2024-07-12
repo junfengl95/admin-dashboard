@@ -4,104 +4,80 @@
 }
 
 .container {
+    text-align: center;
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
 
-.container div {
-    font-size: 32px;
-    font-family: Helvetica;
-    font-weight: bold;
-    color: white;
-}
-
-.left-container {
-    background-color: deepskyblue;
-    padding: 5px;
+.sidebar {
+    background-color: rgb(26, 124, 163);
+    grid-column: 1 / 2;
     display: grid;
-    grid-template-rows: 1fr 2fr 3fr;
-    justify-content: center;
+    grid-template-rows: 1fr 2fr 2fr;
+    color: #ffff
 }
 
-.dashboard-logo {
+.right-container {
+    grid-column: 2 / 3;
     display: grid;
-    grid-row: 1 / 2
+    grid-template-rows: 1fr 4fr;
 }
 
-.menu-top {
-    grid-row: 2 / 3;
-}
-
-.menu-bottom {
-    grid-row: 3 / 6;
-}
-
-.menu-top ul,
-.menu-top li,
-.menu-bottom ul,
-.menu-bottom li {
-    list-style: none;
-    font-size: 16px;
-}
-
-.container ,.right-container {
-    grid-column: 2 / 5;
+.right-container .profile {
+    grid-column: 1/3;
+    grid-row: 1/2;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-}
-
-.container .right-container .profile {
-    display: grid;
-    grid-row: 1 / 2;
-    grid-column: 1 / 4;
-    background-color: aliceblue;
+    grid-template-rows: 1fr 1fr;
 }
 
 .profile-top {
-    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
 }
 
-.profile-top-left{
+.profile-bottom {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+}
+
+.right-container .dashboard-contents {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
     display: grid;
-    grid-row: 1 / 7;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: 7fr 4fr;
+}
+
+.projects {
+    grid-row: 2 / 3;
     grid-column: 1 / 2;
-}
-
-.wrapper {
     display: grid;
-    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto minmax(250px, 1fr);
 }
 
-
-.dashboard-contents {
+.notice {
+    grid-row: 2/ 3;
+    grid-column: 2/ 3;
     display: grid;
-    background-color:grey;
-    grid-template-columns : 3fr 1fr;
+    grid-template-rows: 1fr 5% 1fr;
 }
 
-.project {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px
-}
-
-.project .card {
+.card {
     background-color: #FFFFFF;
     color: black;
     text-align: center;
     height: 200px;
-    border: 2px solid black;
 }
-
-.card .title {
-    font-size: 18px;
-    text-align: center;
-  }
 
 .card p {
     color: black;
     font-weight: normal;
     font-size: 14px;
     padding: 5px;
-  }
+}
+
+.card .title {
+    font-size: 18px;
+    text-align: center;
+}
