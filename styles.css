@@ -34,8 +34,7 @@
 }
 
 .menu-top ul,
-.menu-bottom ul,
-.top-right-profile ul {
+.menu-bottom ul {
     list-style-type: none;
     padding: 0;
 }
@@ -90,8 +89,8 @@
 
 .search-icon {
     margin-left: 2vw;
-    width: 26px;
-    height: 26px;
+    width: 2em;
+    height: 2em;
 }
 
 .top-left-profile input[type="text"] {
@@ -105,18 +104,21 @@
 }
 
 
-.top-right-profile {
-    display: flex;
+.top-right-profile ul {
+    display: flex; /*Need to apply flex to ul */
     flex-direction: row;
-    margin-left: 0.5em;
+    align-items: space;
+    list-style-type: none;
+    padding: 0;
+    margin: 1em;
+    gap: 1em;
+    
 }
 
-.top-right-profile .notification-icon+.account-icon {
-    width: 1.2em;
-    height: 1.2em;
+.top-right-icon {
+    width: 2em;
+    height: 2em;
 }
-
-
 
 
 .profile-bottom {
@@ -125,15 +127,30 @@
     grid-template-columns: 6fr 4fr;
 }
 
-.bottom-right-profile {
-    justify-content: space-around;
-    align-content: center;
+.big-account-icon {
+    width: 4em;
+    height: 4em;
 }
 
 
 .bottom-left-profile {
-    justify-content: space-around;
-    align-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 3em;
+}
+
+.bottom-left-profile .greeting-card p {
+    font-size: 1.25em;
+    margin-left: 0.5em;
+}
+
+.bottom-right-profile {
+    display: flex;
+    flex-direction: row;
+}
+
+.bottom-right-profile .button-container {
+   align-content: center; 
 }
 
 .dashboard-contents {
