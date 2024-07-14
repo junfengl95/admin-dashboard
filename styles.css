@@ -264,17 +264,31 @@
 
 .trending-card {
     background-color: #FFFFFF;
-    color: black;
     text-align: left;
     margin: 1.2em;
+    padding-top: 1.5em;
+    padding-left: 0.5em;
 }
 
-.trending-content li {
-    display: grid;
-    list-style: none;
-
+.trending-content {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-.trending-content-body li {
-    
+.trending-body {
+    display: flex;
+    align-items: center;
+    padding: 1em 0;
+    gap: 1em;
+    padding: 1em
+}
+
+.trending-icon {
+    width: 3em;
+    height: 3em;
+}
+
+.mentions p:first-child {
+    font-weight: bolder;
 }
