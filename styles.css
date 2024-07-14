@@ -221,7 +221,8 @@
     border-radius: 8px;
     display: grid;
     position: relative;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 20% 60% 20%; /* Adjust row definition*/
+    overflow: hidden;
 }
 
 .card:before {
