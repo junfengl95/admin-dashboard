@@ -13,28 +13,29 @@
     background-color: rgb(26, 124, 163);
     grid-column: 1 / 2;
     display: grid;
-    grid-template-rows: 0.5fr 2fr 2fr 0.5fr;
+    grid-template-rows: 0.5fr 2fr 0.2fr 2fr 0.5fr;
     color: #ffff
 }
 
 .dashboard-logo {
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 30px;
-    gap: 5px;
-    margin-left: 10px;
+    font-size: 2em;
+    gap: 0.5em;
+    margin-left: 1.7em;
+    margin-right: 0.5em;
     font-weight: bold;
 }
 
 .sidebar-big-icon {
-    width:40px;
-    height: 40px;
+    width: 2em;
+    height: 2em;
     filter: invert(100%) sepia(8%) saturate(94%) hue-rotate(191deg) brightness(114%) contrast(100%)
 }
 
 .menu-top ul,
-.menu-bottom ul {
+.menu-bottom ul,
+.top-right-profile ul {
     list-style-type: none;
     padding: 0;
 }
@@ -43,17 +44,17 @@
 .menu-bottom li{
     display: flex;
     align-items: center;
-    padding: 8px;
-    margin-left: 20px;
+    padding: 0.5em;
+    margin-left: 3em;
     font-weight: bold;
-    font-size: 20px;
-    gap: 4px
+    font-size: 1.25em;
+    gap: 0.25em
 }
 
 
 .menu-icon {
-    width: 24px;
-    height: 24px;
+    width: 1.5em;
+    height: 1.5em;
     filter: invert(100%) sepia(8%) saturate(94%) hue-rotate(191deg) brightness(114%) contrast(100%)
 }
 
@@ -81,21 +82,42 @@
 }
 
 .top-left-profile {
+    margin-left: 2em;
     display: flex;
-    justify-self:flex-start;
+    justify-self: flex-start;
+    gap: 0.25em
 }
 
 .search-icon {
-    width: 24px;
-    height: 24px;
+    margin-left: 2vw;
+    width: 26px;
+    height: 26px;
 }
 
+.top-left-profile input[type="text"] {
+    background-color: #e2e8f0;
+    border-color: #ffff;
+    border-radius: 6px;
+    width: 40vw;
+    height: 1.25em;
+    font-size: 1.25em;
+    box-shadow: none;
+}
 
 
 .top-right-profile {
-    align-content: center;
-
+    display: flex;
+    flex-direction: row;
+    margin-left: 0.5em;
 }
+
+.top-right-profile .notification-icon+.account-icon {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+
+
 
 .profile-bottom {
     grid-row: 2 / 3;
@@ -131,7 +153,7 @@
     grid-column: 1 / 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-left: 5px;
+    margin-left: 0.3em;
     /* overflow: auto; */
 }
 
