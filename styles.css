@@ -10,7 +10,7 @@
 }
 
 .sidebar {
-    background-color: rgb(26, 124, 163);
+    background-color: rgba(25, 146, 228, 0.781);
     grid-column: 1 / 2;
     display: grid;
     grid-template-rows: 0.5fr 2fr 0.2fr 2fr 0.5fr;
@@ -40,7 +40,7 @@
 }
 
 .menu-top li,
-.menu-bottom li{
+.menu-bottom li {
     display: flex;
     align-items: center;
     padding: 0.5em;
@@ -74,7 +74,7 @@
 
 .profile-top {
     grid-row: 1 / 2;
-    display:grid;
+    display: grid;
     grid-template-columns: 7fr 3fr;
     grid-template-rows: 1fr;
     align-items: center;
@@ -105,14 +105,15 @@
 
 
 .top-right-profile ul {
-    display: flex; /*Need to apply flex to ul */
+    display: flex;
+    /*Need to apply flex to ul */
     flex-direction: row;
     align-items: space;
     list-style-type: none;
     padding: 0;
     margin: 1em;
     gap: 1em;
-    
+
 }
 
 .top-right-icon {
@@ -123,7 +124,7 @@
 
 .profile-bottom {
     grid-row: 2 / 3;
-    display:grid;
+    display: grid;
     grid-template-columns: 6fr 4fr;
 }
 
@@ -146,11 +147,23 @@
 
 .bottom-right-profile {
     display: flex;
-    flex-direction: row;
+    justify-content: center; /* centers the button conatiner horizontally */
+    align-items: center; /* centers the button conatiner vertically */
 }
 
-.bottom-right-profile .button-container {
-   align-content: center; 
+.button-container {
+    display: flex;
+    gap: 1em 
+}
+
+.button-container button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    border: 1px solid #ffff;
+    border-radius: 30px;
+    color: #FFFFFF;
+    font-weight: bolder;
+    background-color: rgba(25, 146, 228, 0.781);
 }
 
 .dashboard-contents {
@@ -182,7 +195,7 @@
     font-size: 20px
 }
 
-.annoucement-header, 
+.annoucement-header,
 .trending-header {
     text-align: left;
     margin-top: 15px;
@@ -204,8 +217,8 @@
     color: black;
     text-align: left;
     margin: 20px;
-    margin-top:0px;
-    
+    margin-top: 0px;
+
 }
 
 .card p {
@@ -227,7 +240,7 @@
     color: black;
     text-align: left;
     margin: 20px;
-    
+
 }
 
 .trending-card {
@@ -235,5 +248,5 @@
     color: black;
     text-align: left;
     margin: 20px;
-    
+
 }
